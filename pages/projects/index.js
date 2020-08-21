@@ -1,7 +1,7 @@
-import { Component } from "react";
+import {Component} from "react";
 import styled from "styled-components";
 
-import { attributes, react, content } from "../../content/projects.md";
+import {attributes} from "../../content/projects.md";
 
 const Container = styled.div`
   display: flex;
@@ -40,14 +40,12 @@ const Container = styled.div`
     justify-content: space-around;
     align-self: center;
     text-align: left;
-    // border: 1px solid #cdc9c9;
-    // border-radius: 6px;
   }
 `;
 
 export default class Projects extends Component {
   render() {
-    let { title, project } = attributes;
+    let {title, project} = attributes;
     return (
       <Container>
         <h1 className="text">{title}</h1>
