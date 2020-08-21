@@ -11,18 +11,18 @@ collections:
         name: "home"
         file: "content/home.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - {label: "Title", name: "title", widget: "string"}
       - label: "About"
         name: "about"
         file: "content/about.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "About", name: "about", widget: "markdown" }
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "About", name: "about", widget: "markdown"}
       - label: "Projects"
         name: "projects"
         file: "content/projects.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - {label: "Title", name: "title", widget: "string"}
           - label: "Project"
             name: "project"
             widget: "list"
@@ -33,12 +33,7 @@ collections:
                   widget: "string",
                   required: true,
                 }
-              - {
-                  label: "Image",
-                  name: "image",
-                  widget: "image",
-                  required: true,
-                }
+              - {label: "Image", name: "image", widget: "image", required: true}
               - {
                   label: "Datetime",
                   name: "datetime",
@@ -55,21 +50,21 @@ collections:
         name: "page4"
         file: "content/page4.md"
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - {label: "Title", name: "title", widget: "string"}
   - label: "Blog"
     name: "blog"
     folder: "content/blogs"
     slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
     create: true
     fields:
-      - { label: "Title", name: "title", widget: "string", required: true }
+      - {label: "Title", name: "title", widget: "string", required: true}
       - {
           lable: "Publish Date",
           name: "date",
           widget: "datetime",
           required: true,
         }
-      - { label: "Image", name: "image", widget: "image", required: true }
+      - {label: "Image", name: "image", widget: "image", required: true}
       - {
           label: "Description",
           name: "description",
