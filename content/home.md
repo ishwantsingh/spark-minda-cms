@@ -1,3 +1,3 @@
 ---
-title: Simple Template
+title: Home
 ---
