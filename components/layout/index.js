@@ -34,7 +34,7 @@ const Div = styled.div`
   height: 100%;
 `;
 
-const Layout = ({ children }) => {
+const Layout = ({children}) => {
   return (
     <Container>
       <Nav>
@@ -44,9 +44,9 @@ const Layout = ({ children }) => {
         <Link href={"/about"}>
           <a>About</a>
         </Link>
-        <Link href={"/projects"}>
+        {/* <Link href={"/projects"}>
           <a>Projects</a>
-        </Link>
+        </Link> */}
         <Link href={"/blog"}>
           <a>Blog</a>
         </Link>
